@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design - Client Policy</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1dc962;
+        --text-color: #0e1b13;
+        --background-color: #f8fbfa;
+        --border-color: #e8f3ec;
+      }
+      body {
+        font-family: 'Work Sans', sans-serif;
+      }
+      .nav-link {
+        @apply text-[var(--text-color)] text-sm font-medium leading-normal hover:text-[var(--primary-color)] transition-colors duration-300;
+      }
+      .policy-section {
+        @apply border-b border-[var(--border-color)] py-8;
+      }
+      .policy-section:last-child {
+        @apply border-b-0;
+      }
+      .policy-title {
+        @apply text-xl font-semibold text-[var(--text-color)] mb-4 flex items-center gap-3;
+      }
+      .policy-text {
+        @apply text-gray-600 text-base font-normal leading-relaxed;
+      }
+      .icon-circle {
+        @apply flex items-center justify-center size-10 bg-green-100 rounded-full text-[var(--primary-color)];
+      }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-color)]">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-4">
+<a class="flex items-center gap-3 text-[var(--text-color)]" href="#">
+<div class="size-8 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">Creative Agency</h2>
+</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="nav-link" href="#">Home</a>
+<a class="nav-link" href="#">Services</a>
+<a class="nav-link" href="#">Portfolio</a>
+<a class="nav-link" href="#">About</a>
+<a class="nav-link" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-wide shadow-md hover:bg-green-600 transition-all duration-300" href="#">
+<span class="truncate">Get a Quote</span>
+</a>
+<button class="lg:hidden p-2 rounded-md text-[var(--text-color)] hover:bg-gray-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="bg-white border-b border-[var(--border-color)]">
+<div class="container mx-auto px-6 py-16 text-center">
+<h1 class="text-4xl md:text-5xl font-bold text-[var(--text-color)] leading-tight tracking-tighter">Client Policy &amp; Terms of Service</h1>
+<p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our commitment to a transparent and professional partnership. Please review our policies below.
+                </p>
+</div>
+</div>
+<div class="container mx-auto px-6 py-12 md:py-20">
+<div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-sm">
+<div class="policy-section">
+<h2 class="policy-title">
+<span class="icon-circle">
+<span class="material-symbols-outlined">payments</span>
+</span>
+                    Payment Terms
+                </h2>
+<p class="policy-text">
+                    We require a 50% upfront payment before commencing any project. This initial payment secures your spot in our schedule and allows us to allocate the necessary resources. The remaining 50% is due upon project completion, prior to the final delivery of files. Payments can be made via bank transfer, M-Pesa, or other mutually agreed-upon methods.
+                </p>
+</div>
+<div class="policy-section">
+<h2 class="policy-title">
+<span class="icon-circle">
+<span class="material-symbols-outlined">rate_review</span>
+</span>
+                    Revision Policy
+                </h2>
+<p class="policy-text">
+                    We believe in collaboration and strive for your complete satisfaction. Each project includes up to three rounds of revisions. This ensures the final product aligns perfectly with your vision. Any additional revisions beyond this scope may be subject to extra charges, which will be discussed and agreed upon beforehand. To keep the project on track, we request that revision feedback be submitted within 7 days of receiving a design draft.
+                </p>
+</div>
+<div class="policy-section">
+<h2 class="policy-title">
+<span class="icon-circle">
+<span class="material-symbols-outlined">cancel</span>
+</span>
+                    Refund &amp; Cancellation Policy
+                </h2>
+<p class="policy-text">
+                    You may cancel your project within 24 hours of the initial payment for a full refund. Should you need to cancel after this period, a partial refund will be issued based on the amount of work already completed. Once the final designs have been approved and delivered, no refunds will be issued. We aim for a fair process that respects both your investment and our team's dedicated time.
+                </p>
+</div>
+<div class="policy-section">
+<h2 class="policy-title">
+<span class="icon-circle">
+<span class="material-symbols-outlined">cloud_upload</span>
+</span>
+                    File Delivery
+                </h2>
+<p class="policy-text">
+                    Upon receipt of the final payment, all your project files will be organized and delivered electronically through a secure, private link. It is the client's responsibility to ensure they have the appropriate software to access and utilize these files. Unless a non-disclosure agreement is signed, we reserve the right to showcase the completed work in our portfolio and for other promotional purposes.
+                </p>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-[#e8f3ec]/50">
+<div class="container mx-auto px-6 py-10 text-center">
+<div class="flex flex-wrap items-center justify-center gap-6 mb-6">
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Contact Us</a>
+</div>
+<p class="text-gray-500 text-sm font-normal leading-normal">© 2024 Creative Agency. All rights reserved.</p>
+</div>
+</footer>
+</div>
+
+</body></html>

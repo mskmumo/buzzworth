@@ -1,0 +1,180 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1dc962;
+        --secondary-color: #f8fbfa;
+        --text-primary: #0e1b13;
+        --text-secondary: #50956c;
+      }
+      .tab-active {
+        border-bottom-width: 3px;
+        border-color: var(--primary-color);
+        color: var(--text-primary);
+      }
+      .tab-inactive {
+        border-bottom-width: 3px;
+        border-color: transparent;
+        color: var(--text-secondary);
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-var(--secondary-color) group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-4">
+<div class="flex items-center gap-3 text-var(--text-primary)">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8v-2h3V7h2v4h3v2h-3v4h-2z"></path>
+</svg>
+<h2 class="text-var(--text-primary) text-xl font-bold leading-tight tracking-[-0.015em]">Creative Hub</h2>
+</div>
+<nav class="flex items-center gap-8 text-base font-medium">
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Home</a>
+<a class="text-var(--text-primary) font-semibold" href="#">Services</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Portfolio</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">About</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[100px] items-center justify-center rounded-full h-11 px-6 bg-[var(--primary-color)] text-var(--text-primary) text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all">
+<span class="truncate">Get a Quote</span>
+</button>
+</header>
+<main class="px-4 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-5xl flex-1">
+<div class="flex flex-wrap justify-between gap-4 p-4">
+<div class="flex flex-col gap-2">
+<p class="text-var(--text-primary) text-4xl font-bold leading-tight">Our Services</p>
+<p class="text-var(--text-secondary) text-lg font-normal leading-normal">Explore our range of creative solutions tailored to elevate your brand.</p>
+</div>
+</div>
+<div class="sticky top-0 bg-[var(--secondary-color)] z-10">
+<div class="flex border-b border-gray-200 px-4 gap-8">
+<a class="flex flex-col items-center justify-center gap-2 pb-3 pt-4 tab-active" href="#web-design">
+<span class="material-symbols-outlined text-2xl">language</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Web Design</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-2 pb-3 pt-4 tab-inactive hover:text-var(--text-primary) transition-colors" href="#graphic-design">
+<span class="material-symbols-outlined text-2xl">palette</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Graphic Design</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-2 pb-3 pt-4 tab-inactive hover:text-var(--text-primary) transition-colors" href="#social-media">
+<span class="material-symbols-outlined text-2xl">smartphone</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Social Media</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-2 pb-3 pt-4 tab-inactive hover:text-var(--text-primary) transition-colors" href="#bundles">
+<span class="material-symbols-outlined text-2xl">inventory_2</span>
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Bundles</p>
+</a>
+</div>
+</div>
+<div class="p-4 md:p-8 space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300" id="web-design">
+<div class="flex flex-col gap-4">
+<h3 class="text-var(--text-primary) text-2xl font-bold leading-tight">Web Design</h3>
+<p class="text-var(--text-secondary) text-base font-normal leading-relaxed">
+                    Crafting responsive and engaging websites that reflect your brand's identity and drive user engagement. We focus on clean code, intuitive user experience, and modern aesthetics to create sites that perform.
+                  </p>
+<div class="mt-2">
+<p class="text-var(--text-primary) font-semibold">Ideal for: Startups, SMEs, and established businesses looking to revamp their online presence.</p>
+<p class="text-var(--text-primary) font-semibold mt-1">Price Range: <span class="font-bold text-[var(--primary-color)]">KES 50,000 - 250,000</span></p>
+</div>
+<button class="mt-4 flex items-center justify-center gap-2 self-start rounded-full h-11 px-6 bg-gray-100 text-var(--text-primary) text-base font-bold hover:bg-gray-200 transition-colors">
+<span class="truncate">View Packages</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="w-full h-64 md:h-80 rounded-lg overflow-hidden">
+<img alt="Web Design Service Image" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYBmu_wZIVWQ8NzrIoqZCdwOBcjof2azQp__Nqg0tUru-bNbf2MlIcTkVJhLsTztp4I8WoxOzVS2cVr9A5zW9SZrlxrPOmqXYfADkbbN6uqMkAQbXLleen-7eK_u3VdLKlPNq1qb0OGJ5pLYgQpePnl-Msna10qPUqRlVbhd5hPchq-enKUM3LSdtWUeoM8uRNnTBGYo6QH7Mj0NzDCbphP-YMEtUu20Pag3v4nvQkwS5XUOxN87k-yfO437QAmcCFM2kTweGWa2Kh"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300" id="graphic-design">
+<div class="w-full h-64 md:h-80 rounded-lg overflow-hidden order-last md:order-first">
+<img alt="Graphic Design Service Image" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcE5UcQqQmxVGM97t5_oDe7lqxdtgJNLCSPv2LaxwyJaL5FWId0RvRPTyl0sObnjdGnVPxvOo1w-S_F-IBw8cQFA3wF-WVKdx2iFB49QzYqp0W79vUgIRS0_B-Ob6UYCOeaK9y8RM8SVn2tPdgAxbz4ueFQoTq2RMeJsyNxqbyfBKtqSQ19LaaO-rSghWddCggh20jKxzk7Xzkt62diWkFYsPi1dc69eKAie1Jfu5J3jr3qMT-mKzlTLVKeS9zn6oriop8FvPWhWOx"/>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-var(--text-primary) text-2xl font-bold leading-tight">Graphic Design</h3>
+<p class="text-var(--text-secondary) text-base font-normal leading-relaxed">
+                      Creating visually stunning designs for logos, branding, marketing materials, and more. Our designs capture your brand's essence and communicate your message effectively.
+                    </p>
+<div class="mt-2">
+<p class="text-var(--text-primary) font-semibold">Ideal for: Brands needing a strong visual identity, marketing campaigns, and print materials.</p>
+<p class="text-var(--text-primary) font-semibold mt-1">Price Range: <span class="font-bold text-[var(--primary-color)]">KES 15,000 - 100,000</span></p>
+</div>
+<button class="mt-4 flex items-center justify-center gap-2 self-start rounded-full h-11 px-6 bg-gray-100 text-var(--text-primary) text-base font-bold hover:bg-gray-200 transition-colors">
+<span class="truncate">View Packages</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300" id="social-media">
+<div class="flex flex-col gap-4">
+<h3 class="text-var(--text-primary) text-2xl font-bold leading-tight">Social Media</h3>
+<p class="text-var(--text-secondary) text-base font-normal leading-relaxed">
+                    Developing and executing social media strategies to increase brand awareness, engage your audience, and drive conversions. We manage your presence across all relevant platforms.
+                  </p>
+<div class="mt-2">
+<p class="text-var(--text-primary) font-semibold">Ideal for: Businesses aiming to grow their online community and generate leads through social channels.</p>
+<p class="text-var(--text-primary) font-semibold mt-1">Price Range: <span class="font-bold text-[var(--primary-color)]">KES 30,000 - 150,000 / month</span></p>
+</div>
+<button class="mt-4 flex items-center justify-center gap-2 self-start rounded-full h-11 px-6 bg-gray-100 text-var(--text-primary) text-base font-bold hover:bg-gray-200 transition-colors">
+<span class="truncate">View Packages</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="w-full h-64 md:h-80 rounded-lg overflow-hidden">
+<img alt="Social Media Service Image" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV7Rw5VpnWSVeyQPUNVq-F6kwnroEcnmBekgqUA_DL47ePdO5fu99UDzUD6iHjGFUETCT0Ru1dARDiQc_mg2HYI-HJjhK070NUCYUwQzZGbYXrx6ArNksqFJRqPwN4jO4j0YiuWN-QBKHRD7pGkBz9xcFqKAVTRYpYdhGAFQEmRO62Xt653KXVpw_W5RGqip_VrILL5olWv_KfrHonigWBNVaI4tNDHZEZG92vUuKXYVzAJpk7elB2y4DbSqEyPYEh3a9q0RQc1R2E"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300" id="bundles">
+<div class="w-full h-64 md:h-80 rounded-lg overflow-hidden order-last md:order-first">
+<img alt="Bundles Service Image" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvADKBXawcmrsnRic94vD_Vo9I_ZW57rBp9DPtv1QMKVYFg6KztH5Cgk1npbqxOtlc-lVUUf63lnheh9Vr4EmP54kVTDp-XInhq8vz97ukrRwAIe-o1GQnEQA0O73gFH2r2KfPrFOlu90Oz6JuSGN2DDpnEyfDIbz7t7_dgqatXLRTT5EiW_rTHzwcpyK3y4thRU8MnepybAYjGbxBwIXhFfRbRYhAd4FbfLD6YVVtby6UKixaBdEMbf5O3_RVN6pYxUIDA7aJFu-0"/>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-var(--text-primary) text-2xl font-bold leading-tight">Business Bundles</h3>
+<p class="text-var(--text-secondary) text-base font-normal leading-relaxed">
+                    Comprehensive packages combining our core services to provide a holistic and cost-effective approach to your brand's digital needs. Perfect for getting your business off the ground.
+                  </p>
+<div class="mt-2">
+<p class="text-var(--text-primary) font-semibold">Ideal for: New businesses and those looking for an all-in-one branding and marketing solution.</p>
+<p class="text-var(--text-primary) font-semibold mt-1">Price Range: <span class="font-bold text-[var(--primary-color)]">Starting from KES 85,000</span></p>
+</div>
+<button class="mt-4 flex items-center justify-center gap-2 self-start rounded-full h-11 px-6 bg-gray-100 text-var(--text-primary) text-base font-bold hover:bg-gray-200 transition-colors">
+<span class="truncate">View Packages</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="flex justify-center border-t border-gray-200 bg-white">
+<div class="flex max-w-7xl flex-1 flex-col">
+<div class="flex flex-col items-center justify-between gap-8 px-5 py-10 text-center md:flex-row">
+<div class="flex items-center gap-3 text-var(--text-primary)">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8v-2h3V7h2v4h3v2h-3v4h-2z"></path>
+</svg>
+<h2 class="text-var(--text-primary) text-xl font-bold">Creative Hub</h2>
+</div>
+<nav class="flex flex-wrap justify-center gap-6 text-base font-medium">
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Home</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Services</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Portfolio</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">About</a>
+<a class="text-var(--text-secondary) hover:text-var(--text-primary) transition-colors" href="#">Contact</a>
+</nav>
+<p class="text-var(--text-secondary) text-base font-normal">© 2024 Creative Hub. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
